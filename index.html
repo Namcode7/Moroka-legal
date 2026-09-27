@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Quanto</title>
+<meta name="description" content="Qué datos maneja Quanto, dónde viven y qué control tienes sobre ellos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F8FA; --ink:#0F1A2A; --dim:#526174; --rule:#DFE5EB;
+    --act:#0088B0; --navy:#0B1120; --warn:#9A6B0F;
+    --serif:"Source Serif 4",Georgia,serif;
+    --sans:Inter,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#0B1120; --ink:#F7F8FA; --dim:#B8C3D1; --rule:#22304A; --act:#0EA5E9;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0B1120; --ink:#F7F8FA; --dim:#B8C3D1; --rule:#22304A; --act:#0EA5E9;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--sans); font-size:16px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:0 16px 96px}
+  header{padding:56px 0 8px}
+  .marca{display:flex; align-items:center; gap:10px; margin-bottom:40px}
+  .marca .q{
+    width:36px; height:36px; border-radius:9px; background:var(--navy);
+    color:#F7F8FA; font-family:var(--serif); font-size:22px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .marca span{font-family:var(--serif); font-size:22px; font-weight:600}
+  h1{font-family:var(--serif); font-weight:600; font-size:34px; line-height:1.18; letter-spacing:-.01em; margin:0}
+  .fecha{color:var(--dim); font-size:13px; margin-top:8px}
+  .entrada{font-size:17px; color:var(--dim); margin-top:24px}
+  h2{font-family:var(--serif); font-weight:600; font-size:22px; margin:44px 0 10px; letter-spacing:-.01em}
+  h3{font-size:15px; font-weight:600; margin:26px 0 6px}
+  p,li{color:var(--dim)}
+  p strong,li strong{color:var(--ink); font-weight:600}
+  a{color:var(--act)}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  hr{border:0; border-top:1px solid var(--rule); margin:44px 0}
+  .aviso{
+    border-left:3px solid var(--act); background:rgba(0,136,176,.06);
+    padding:16px 18px; margin:24px 0; border-radius:0 8px 8px 0;
+  }
+  .aviso p{margin:0; color:var(--ink)}
+  .caja{border:1px solid var(--rule); border-radius:12px; padding:20px 22px; margin:24px 0}
+  .caja h2{margin-top:0}
+  .btn{
+    display:inline-block; background:var(--act); color:#fff; text-decoration:none;
+    font-weight:600; padding:12px 20px; border-radius:8px; margin-top:8px;
+  }
+  footer{margin-top:64px; padding-top:24px; border-top:1px solid var(--rule); font-size:13px; color:var(--dim)}
+  footer a{margin-right:14px}
+  @media (max-width:600px){ h1{font-size:28px} header{padding-top:36px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="marca"><div class="q">Q</div><span>Quanto</span></div>
+  <h1>Política de privacidad</h1>
+  <p class="fecha">Última actualización: 26 de septiembre de 2026</p>
+  <p class="entrada">
+    Quanto es una aplicación para registrar gastos, ingresos y patrimonio personal.
+    Este documento explica qué datos maneja, dónde viven y qué control tienes sobre
+    ellos. Está escrito para que se entienda, no para cubrirnos las espaldas.
+  </p>
+</header>
+
+<h2>Quién responde por tus datos</h2>
+<p>Yorman Piñate — <a href="mailto:namroy7@gmail.com">namroy7@gmail.com</a></p>
+
+<h2>Qué datos recogemos</h2>
+<p><strong>Los que tú registras.</strong> Cuentas bancarias, tarjetas, carteras y
+efectivo con su nombre, institución, moneda y saldo; operaciones con su monto,
+categoría, fecha, tasa de cambio y comprobante si adjuntas foto; presupuestos,
+categorías, metas de ahorro, servicios y recibos que esperas pagar, y préstamos
+entre personas.</p>
+
+<p><strong>Datos de tus cuentas de pago.</strong> Si guardas un perfil de pago móvil
+para cobrar, Quanto almacena el banco, el teléfono, la cédula o RIF y el nombre del
+titular que escribas. De una <strong>tarjeta</strong> solo se guardan los
+<strong>últimos cuatro dígitos</strong>: nunca el número completo, y nunca el código
+de seguridad.</p>
+
+<p><strong>Nombres de terceros.</strong> Si registras un préstamo, guardas el nombre
+que le pongas a esa persona. Quanto <strong>no lee la agenda del teléfono</strong>:
+esa lista la escribes tú.</p>
+
+<p><strong>Los de tu cuenta.</strong> Correo electrónico y nombre, que vienen de
+Google si entras con Google, o que escribes tú si te registras con correo. La
+contraseña la gestiona Supabase Auth: <strong>Quanto nunca la ve ni la
+almacena</strong>.</p>
+
+<p><strong>Nada más.</strong> Quanto no recoge tu ubicación, ni tu lista de
+contactos, ni identificadores de publicidad, ni analítica de uso. No hay
+rastreadores.</p>
+
+<h2>Lectura de las notificaciones de tu banco</h2>
+<div class="aviso">
+  <p>Es opcional, viene <strong>apagada</strong> y solo funciona si tú la enciendes.</p>
+</div>
+<p>Quanto puede leer las notificaciones que te manda tu banco para
+<strong>proponerte</strong> un movimiento que luego tú confirmas. Esto importa y por
+eso se explica aparte:</p>
+<ul>
+  <li>Solo funciona si lo enciendes en Ajustes <em>y además</em> concedes el permiso
+      en los ajustes de Android.</li>
+  <li>Android concede ese permiso para <strong>todas</strong> las notificaciones del
+      teléfono, no solo las del banco. Quanto descarta cualquier notificación que no
+      venga de una aplicación de banco <strong>antes de leer su contenido</strong>.</li>
+  <li>Lo que lee <strong>se interpreta en el teléfono</strong>. El texto de la
+      notificación no se envía a ningún servidor, ni al nuestro ni a ninguno ajeno.</li>
+  <li><strong>No registra nada por su cuenta.</strong> Solo te propone el movimiento;
+      guardarlo es una decisión tuya.</li>
+  <li>Se apaga cuando quieras, desde Ajustes o retirando el permiso en Android.</li>
+</ul>
+
+<h2>Qué hacemos con tus datos</h2>
+<p>Mostrarte tus finanzas y guardarlas para que vuelvan si cambias o reinstalas el
+teléfono. Eso es todo.</p>
+<p><strong>No vendemos tus datos. No los compartimos con terceros con fines
+publicitarios ni de análisis. No se usan para entrenar modelos.</strong></p>
+
+<h2>Dónde viven</h2>
+<p><strong>En tu teléfono</strong>, en una base de datos local. Es la copia
+principal: la app funciona sin conexión y no espera a la red para registrar nada.</p>
+<p><strong>En Supabase</strong> (base de datos PostgreSQL y almacenamiento de
+archivos), si inicias sesión, como copia de seguridad y para que puedas recuperar
+todo al reinstalar. Cada usuario solo puede leer y escribir lo suyo; eso lo impone
+el servidor con reglas de seguridad por fila, no solo la aplicación.</p>
+<p><strong>Los comprobantes que fotografías</strong> se guardan en tu teléfono y se
+suben a ese mismo almacenamiento, en una carpeta privada que solo abre tu cuenta. Se
+comprimen antes de subirse.</p>
+
+<h2>Tu PIN</h2>
+<p>Si configuras un PIN de acceso, <strong>no se guarda</strong>. Se guarda un
+verificador derivado de él mediante PBKDF2, cifrado con AES-GCM bajo una clave que
+vive en el almacén de claves de Android y no puede salir del dispositivo.
+<strong>El PIN no sale de tu teléfono ni viaja a la nube.</strong></p>
+<p>La huella dactilar la gestiona Android. Quanto nunca la recibe ni la almacena.</p>
+
+<h2>Permisos del teléfono y para qué se usan</h2>
+<ul>
+  <li><strong>Notificaciones</strong>: para avisarte de un recibo que vence, de un
+      presupuesto que se pasa, de un préstamo por cobrar o de una tarjeta por vencer.</li>
+  <li><strong>Cámara y fotos</strong>: solo si adjuntas el comprobante de una
+      operación.</li>
+  <li><strong>Lectura de notificaciones</strong>: opcional y apagada; ver el apartado
+      de arriba.</li>
+  <li><strong>Batería sin restricciones</strong>: opcional, para que los avisos
+      lleguen a su hora.</li>
+</ul>
+
+<h2>Terceros</h2>
+<ul>
+  <li><strong>Supabase</strong> (Supabase Inc.): identidad, base de datos y
+      almacenamiento de los comprobantes.
+      <a href="https://supabase.com/privacy">Su política</a>.</li>
+  <li><strong>Google Sign-In</strong>, si eliges entrar con Google: Google nos entrega
+      tu correo y tu nombre.
+      <a href="https://policies.google.com/privacy">Su política</a>.</li>
+  <li><strong>ve.dolarapi.com, api.coingecko.com y open.er-api.com</strong>: consulta
+      de tasas de cambio. Son peticiones de solo lectura y <strong>no se les envía
+      ningún dato tuyo</strong>; la app solo pregunta a cuánto está el dólar, el
+      bolívar, el euro y el bitcoin.</li>
+</ul>
+<p>No hay ningún otro tercero. Sin publicidad, sin analítica, sin SDK de
+seguimiento.</p>
+
+<h2>Cuánto tiempo se conservan</h2>
+<p>Mientras tengas la cuenta.</p>
+
+<h2>Tus derechos</h2>
+<ul>
+  <li><strong>Ver y corregir</strong>: todo es editable dentro de la aplicación.</li>
+  <li><strong>Exportar</strong>: desde Ajustes puedes exportar tus movimientos a CSV.</li>
+  <li><strong>Borrar</strong>: en <em>Ajustes › Mi perfil › Dar de baja mi cuenta</em>
+      se borran tus datos de la nube y de este teléfono. Es inmediato y no se puede
+      deshacer. También puedes pedirlo por correo.</li>
+</ul>
+
+<div class="caja" id="eliminar-cuenta">
+  <h2>Eliminar tu cuenta y tus datos</h2>
+  <p>Puedes borrarlo todo sin pedirle permiso a nadie y sin esperar respuesta.</p>
+  <h3>Desde la aplicación</h3>
+  <p>Ajustes › Mi perfil › <strong>Dar de baja mi cuenta</strong>. Borra para siempre
+  tus cuentas, operaciones, presupuestos, metas, préstamos, comprobantes y tasas, en
+  la nube y en el teléfono, además de tu cuenta de acceso.</p>
+  <h3>Sin la aplicación instalada</h3>
+  <p>Escribe a <a href="mailto:namroy7@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20Quanto">namroy7@gmail.com</a>
+  desde el correo con el que te registraste, con el asunto «Eliminar mi cuenta».
+  Se borra en un plazo máximo de 30 días y te avisamos cuando esté hecho.</p>
+  <p><strong>Qué se borra:</strong> todo lo anterior, sin copia que recuperar.<br>
+  <strong>Qué no se conserva:</strong> nada. No guardamos copias tras el borrado.</p>
+  <a class="btn" href="mailto:namroy7@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20Quanto">Pedir la eliminación por correo</a>
+</div>
+
+<h2>Menores</h2>
+<p>Quanto no está dirigida a menores de 13 años y no recoge datos de ellos a
+sabiendas.</p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia de forma relevante, se avisará dentro de la aplicación
+antes de que el cambio tenga efecto.</p>
+
+<footer>
+  <p>
+    <a href="mailto:namroy7@gmail.com">Contacto</a>
+    <a href="#eliminar-cuenta">Eliminar mi cuenta</a>
+  </p>
+  <p>Quanto · @Quantoappvzla · Hecho en Venezuela</p>
+</footer>
+
+</div>
+</body>
+</html>
