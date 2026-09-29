@@ -63,6 +63,17 @@
   footer{margin-top:64px; padding-top:24px; border-top:1px solid var(--rule); font-size:13px; color:var(--dim)}
   footer a{margin-right:14px}
   @media (max-width:600px){ h1{font-size:28px} header{padding-top:36px} }
+  table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--filo, #e2e6ea); vertical-align: top; }
+  th { font-weight: 600; white-space: nowrap; }
+  td:first-child { white-space: nowrap; font-weight: 500; }
+  @media (max-width: 520px) {
+    table, tbody, tr, td, th { display: block; }
+    th { display: none; }
+    tr { border-bottom: 1px solid var(--filo, #e2e6ea); padding: 10px 0; }
+    td { border: 0; padding: 2px 0; }
+    td:first-child { white-space: normal; }
+  }
 </style>
 </head>
 <body>
@@ -71,7 +82,7 @@
 <header>
   <div class="marca"><div class="q">Q</div><span>Quanto</span></div>
   <h1>Política de privacidad</h1>
-  <p class="fecha">Última actualización: 26 de septiembre de 2026</p>
+  <p class="fecha">Última actualización: 29 de septiembre de 2026</p>
   <p class="entrada">
     Quanto es una aplicación para registrar gastos, ingresos y patrimonio personal.
     Este documento explica qué datos maneja, dónde viven y qué control tienes sobre
@@ -99,14 +110,37 @@ de seguridad.</p>
 que le pongas a esa persona. Quanto <strong>no lee la agenda del teléfono</strong>:
 esa lista la escribes tú.</p>
 
-<p><strong>Los de tu cuenta.</strong> Correo electrónico y nombre, que vienen de
-Google si entras con Google, o que escribes tú si te registras con correo. La
-contraseña la gestiona Supabase Auth: <strong>Quanto nunca la ve ni la
-almacena</strong>.</p>
+<p><strong>Los de tu cuenta, que son obligatorios.</strong> Nombres y apellidos,
+nombre de usuario, correo electrónico, cédula o documento, teléfono y fecha de
+nacimiento. La contraseña la gestiona Supabase Auth: <strong>Quanto nunca la ve
+ni la almacena</strong>.</p>
 
-<p><strong>Nada más.</strong> Quanto no recoge tu ubicación, ni tu lista de
-contactos, ni identificadores de publicidad, ni analítica de uso. No hay
-rastreadores.</p>
+<p>Cada uno está por algo concreto, y ninguno se recoge «por si acaso»:</p>
+
+<table>
+  <tr><th>Dato</th><th>Para qué</th></tr>
+  <tr><td>Nombres y apellidos</td><td>Son los que se dictan al cobrar y los que
+    salen en la tarjeta de cobro que genera la aplicación.</td></tr>
+  <tr><td>Nombre de usuario</td><td>Te identifica dentro de Quanto y es único.
+    Otras personas pueden verlo.</td></tr>
+  <tr><td>Correo electrónico</td><td>Es tu forma de entrar y de recuperar el
+    acceso.</td></tr>
+  <tr><td>Cédula o documento</td><td>Es uno de los dos datos de un pago móvil en
+    Venezuela.</td></tr>
+  <tr><td>Teléfono</td><td>El otro dato del pago móvil.</td></tr>
+  <tr><td>Fecha de nacimiento</td><td>Para comprobar que tienes la edad mínima.
+    <strong>Tu edad no se guarda</strong>: se calcula de esa fecha cuando hace
+    falta. Una vez confirmada no se puede cambiar desde la aplicación, porque es
+    una comprobación y no una preferencia.</td></tr>
+</table>
+
+<p>Si entras con Google, Quanto recibe tu correo y tu nombre, y el resto te lo
+pide en una pantalla de alta que no se puede saltar.</p>
+
+<p><strong>No recogemos</strong> tu dirección, tu sexo, tu ubicación, tu lista de
+contactos, identificadores de publicidad ni analítica de uso. No hay
+rastreadores. Si algún día hiciera falta un dato nuevo, se pedirá el
+consentimiento otra vez antes de recogerlo.</p>
 
 <h2>Lectura de las notificaciones de tu banco</h2>
 <div class="aviso">
@@ -209,8 +243,10 @@ seguimiento.</p>
 </div>
 
 <h2>Menores</h2>
-<p>Quanto no está dirigida a menores de 13 años y no recoge datos de ellos a
-sabiendas.</p>
+<p><strong>Quanto es para mayores de 18 años.</strong> Es la razón por la que se
+pide la fecha de nacimiento: la aplicación la comprueba al darte de alta y no
+deja crear una cuenta a quien no llegue a esa edad. Si detectamos una cuenta de
+un menor, se da de baja y sus datos se borran.</p>
 
 <h2>Cambios</h2>
 <p>Si esta política cambia de forma relevante, se avisará dentro de la aplicación
